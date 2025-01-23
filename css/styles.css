@@ -36,5 +36,9 @@ footer {
   align-content: center;
   justify-content: center;
   justify-items: center;
-  color: black;
+  color: aquamarine;
+  background-color: black;
+}
+p{
+  font-size: 25px;
 }
