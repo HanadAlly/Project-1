@@ -1,15 +1,26 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
 main {
   padding: 2rem;
 }
 
-h2{
+h2 {
   background-color: black;
-  color:aquamarine;
+  color: aquamarine;
   text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
 }
 
 .hero img {
@@ -18,29 +29,51 @@ h2{
   height: auto;
   margin-top: 1rem;
 }
+
 .gallery {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
   text-align: center;
+  margin-top: 2rem;
+}
+
+.gallery table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.gallery-item {
+  padding: 2px; /* Reduced padding for smaller margins */
+  text-align: center;
 }
 
 .gallery-item img {
   width: 100%;
-  max-width: 300px;
   height: auto;
+  max-width: 300px;
+  max-height: 200px;
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 footer {
-  align-items: baseline;
-  align-content: center;
+  display: flex;
   justify-content: center;
-  justify-items: center;
+  align-items: center;
+  padding: 1rem;
   color: aquamarine;
   background-color: black;
+  margin-top: 2rem;
 }
-p{
-  font-size: 25px;
+
+footer h3 {
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  margin: 1rem 0;
 }
